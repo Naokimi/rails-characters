@@ -1,15 +1,13 @@
 <% @characters.each do |character| %>
   <div class="card">
-    <div class="front" style="background-image: url(//source.unsplash.com/300x40<%= character.id %>">
+    <div class="front" style="background-image:  url(<%= character.photo %>), url(https://images.starregister.com/2.jpg)">
       <p></p>
     </div>
-    <div class="back" style="background-image: url(//source.unsplash.com/300x40<%= character.id %>">
+    <div class="back" style="background-image: url(https://images.starregister.com/2.jpg)">
       <p><%= link_to character.name, character_path(character) %></p>
     </div>
   </div>
 
 <% end %>
-
-
 
 
