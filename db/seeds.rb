@@ -13,6 +13,9 @@ Character.destroy_all
 puts "creating database"
 
 paulo = Character.create!(name: "Paulo")
+saad = Character.create!(name: "Saad")
+sulav = Character.create!(name: "Sulav")
+brian = Character.create!(name: "Brian")
 language = Power.new(name: "language")
 
 puts "connecting powers and chars"

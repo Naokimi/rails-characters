@@ -1,0 +1,24 @@
+
+<div class="">
+  <div class="card-container d-flex align-items-center">
+    <div class="plx-card gold">
+      <div class="pxc-bg" style="background-image:url('https://i.gyazo.com/a846fc87cca5ebd3942ae1e038bb5083.png');">  </div>
+      <div class="pxc-avatar"><img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/GB/en/999/EP4312-CUSA07658_00-AV00000000000049/1536930670000/image?w=240&amp;h=240&amp;bg_color=000000&amp;opacity=100&amp;_version=00_09_000"/></div>
+      <div class="pxc-stopper">   </div>
+      <div class="pxc-subcard">
+        <div class="pxc-title"><%= @character.name %></div>
+        <div class="pxc-sub"> Thiss probably should be called tagline instead  </div>
+        <div class="pxc-feats"><p>Lorem ipsum</p>
+        </div>
+        <div class="pxc-tags">
+          <% @character.powers.each do |power| %>
+          <div><%= power.name %></div>
+          <% end %>
+        </div>
+        <div class="bottom-row">
+          <div class="links"><a class="site" uk-tooltip="WEBSITE"><i class="fas fa-globe-americas"> </i></a><a class="link discordLink" uk-tooltip="DISCORD SERVER"><i class="fab fa-discord"></i></a><a class="shop" uk-tooltip="EXCLUSIVE POLLUX SHOP"><i class="fas fa-shopping-bag"> </i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

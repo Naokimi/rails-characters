@@ -1,10 +1,28 @@
 // Define variables for your color scheme
 
 // For example:
-$red: #FD1015;
+//$red: #FD1015;
 $blue: #167FFB;
 $yellow: #FFC65A;
-$orange: #E67E22;
+//$orange: #E67E22;
 $green: #1EDD88;
 $gray: #0E0000;
 $light-gray: #F4F4F4;
+
+//from cards
+$primary: hsl(222,80%,50%);
+$primary-light: hsl(222,50%,95%);
+
+$secondary: hsl(350,80%,50%);
+
+$red: hsl(10,80%,50%);
+$orange: hsl(50,80%,50%);
+
+// from single card
+$customBackCol: #8855DD;
+$pink: #F58;
+$c1: #a6aad1;
+$c2: #5f5f80;
+$break-med: 900px;
+$break-small: 700px;
+$cardCol: #1D1D2B;
