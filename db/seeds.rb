@@ -5,3 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "destroying database"
+
+Character.destroy_all
+
+puts "creating database"
+
+paulo = Character.create!(name: "Paulo")
+language = Power.new(name: "language")
+
+puts "connecting powers and chars"
+
+language.character = paulo
+language.save!
+
+puts "finished"
