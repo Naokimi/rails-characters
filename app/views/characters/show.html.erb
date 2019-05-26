@@ -1,22 +1,19 @@
-
-<div class="">
-  <div class="card-container d-flex align-items-center">
-    <div class="plx-card gold">
-      <div class="pxc-bg" style="background-image:url(<%= @character.specie.photo %>);">  </div>
-      <div class="pxc-avatar"><img src="<%= @character.photo %>"/></div>
-      <div class="pxc-stopper">   </div>
-      <div class="pxc-subcard">
-        <div class="pxc-title"><%= @character.name %></div>
-        <div class="pxc-feats">
-          <% @character.descriptions.each do |description| %>
-            <p><%= description %></p>
-          <% end %>
-        </div>
-        <div class="pxc-tags">
-          <% @character.powers.each do |power| %>
-          <div><%= power.name %></div>
-          <% end %>
-        </div>
+<div class="card-container d-flex align-items-center">
+  <div class="plx-card gold">
+    <div class="pxc-bg" style="background-image:url(<%= @character.specie.photo %>);">  </div>
+    <div class="pxc-avatar"><img src="<%= @character.photo %>"/></div>
+    <div class="pxc-stopper">   </div>
+    <div class="pxc-subcard">
+      <div class="pxc-title"><%= @character.name %></div>
+      <div class="pxc-feats">
+        <% @character.descriptions.each do |description| %>
+          <p><%= description %></p>
+        <% end %>
+      </div>
+      <div class="pxc-tags">
+        <% @character.powers.each do |power| %>
+        <div><%= power.name %></div>
+        <% end %>
       </div>
     </div>
   </div>
