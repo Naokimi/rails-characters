@@ -1,13 +1,16 @@
-<% @characters.each do |character| %>
-  <div class="card">
-    <div class="front" style="background-image:  url(<%= character.photo %>), url(https://images.starregister.com/2.jpg)">
-      <p></p>
+<div class="text-center">
+  <h1>Star Empires</h1>
+</div>
+<div class="content">
+  <% @characters.each do |character| %>
+    <div class="card">
+      <div class="front" style="background-image:  url(<%= character.photo %>), url(https://images.starregister.com/2.jpg)">
+        <p></p>
+      </div>
+      <div class="back" style="background-image: url(https://images.starregister.com/2.jpg)">
+        <p><%= link_to character.name, character_path(character) %></p>
+      </div>
     </div>
-    <div class="back" style="background-image: url(https://images.starregister.com/2.jpg)">
-      <p><%= link_to character.name, character_path(character) %></p>
-    </div>
-  </div>
-
-<% end %>
-
+  <% end %>
+</div>
 

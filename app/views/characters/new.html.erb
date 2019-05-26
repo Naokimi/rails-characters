@@ -1,8 +1,8 @@
-<div class="card-container d-flex align-items-center">
+<div class="card-container d-flex align-items-center justify-content-center">
   <%= simple_form_for @character, defaults: { label_html: { class: 'white-label' } } do |f| %>
     <%= f.input :name %>
     <%= f.association :specie %>
-    <%= f.input :photo, label: "Photo url", hint: "Please use photo with transparent background" %>
+    <%= f.input :photo, label: "Photo url", hint: "Please link to a photo with transparent background" %>
     <%= f.input :description %>
     <%= f.submit "Create empire" %>
   <% end %>

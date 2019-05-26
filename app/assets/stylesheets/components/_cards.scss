@@ -10,6 +10,8 @@
 
 .card {
   color: inherit;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
   width: calc(33% - 2rem);
   min-width: calc(33% - 2rem);
