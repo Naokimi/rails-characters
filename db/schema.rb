@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2019_05_25_130904) do
     t.datetime "updated_at", null: false
     t.string "photo"
     t.bigint "specie_id"
-    t.string "descriptions", default: [], array: true
+    t.text "description"
     t.index ["specie_id"], name: "index_characters_on_specie_id"
   end
 

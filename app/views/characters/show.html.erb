@@ -6,9 +6,9 @@
     <div class="pxc-subcard">
       <div class="pxc-title"><%= @character.name %></div>
       <div class="pxc-feats">
-        <% @character.descriptions.each do |description| %>
-          <p><%= description %></p>
-        <% end %>
+        <% @character.description.split("\n").each do |par| %>
+          <p><%= par %></p>
+        <% end unless @character.description.nil? %>
       </div>
       <div class="pxc-tags">
         <% @character.powers.each do |power| %>
