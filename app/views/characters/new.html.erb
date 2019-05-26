@@ -2,7 +2,7 @@
   <%= simple_form_for @character, defaults: { label_html: { class: 'white-label' } } do |f| %>
     <%= f.input :name %>
     <%= f.association :specie %>
-    <%= f.input :photo, label: "Photo url", hint: "Please link to a photo with transparent background" %>
+    <%= f.input :photo, label: "Photo url", hint: "Provide a photo with transparent background! You can pick a photo from here: https://stellaris.paradoxwikis.com/Species" %>
     <%= f.input :description %>
     <%= f.submit "Create empire" %>
   <% end %>
