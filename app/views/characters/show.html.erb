@@ -11,6 +11,7 @@
         <% end unless @character.description.nil? %>
       </div>
       <div class="pxc-tags">
+        <div><%= link_to '<i class="fas fa-plus"></i>'.html_safe, new_character_power_path(@character) %></div>
         <% @character.powers.each do |power| %>
         <div><%= power.name %></div>
         <% end %>

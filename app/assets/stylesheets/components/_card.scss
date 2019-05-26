@@ -12,27 +12,9 @@
   filter: drop-shadow(0 2px 1rem #112);
   border-radius: 4px;
 }
-.plx-card.bronze {
-  overflow: visible;
-}
-@media screen and (max-width: 1000px) and (min-width: 700px) {
-  .plx-card.bronze {
-    left: 120px;
-  }
-}
 @media screen and (min-width: 700px) {
   .plx-card.gold {
     height: 280px;
-  }
-  .plx-card.silver {
-    height: 150px;
-    border-radius: 2px;
-  }
-  .plx-card.bronze {
-    height: 134px;
-    width: 480px;
-    display: inline-flex;
-    margin: 30px 30px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -43,30 +25,7 @@
     border-radius: 2px;
     margin: 25px 15px;
   }
-  .plx-card.silver {
-    height: 270px;
-  }
-  .plx-card.silver .flags {
-    margin: 0 10px;
-  }
-  .plx-card.silver .links {
-    text-align: right;
-    justify-content: flex-end;
-  }
-  .plx-card.silver .links a {
-    font-size: 24px;
-    height: 30px;
-    margin: -8px 5px 5px 5px;
-    padding: 6px 0px 1px 0;
-    border-radius: 2px;
-    color: #FFFA;
-    background: #8855DD;
-  }
-  .plx-card.silver .links a:hover {
-    color: #FFF;
-  }
 }
-
 .pxc-avatar {
   transition: all 600ms ease;
   display: flex;
@@ -75,35 +34,12 @@
   width: 150px;
   justify-content: space-around;
 }
-.bronze .pxc-avatar img {
-  width: 90px;
-  height: 90px;
-  top: -15px;
-  left: -20px;
-  position: absolute;
-}
 @media screen and (max-width: 700px) {
   .pxc-avatar {
     width: 100%;
     height: 100px;
     justify-content: space-around;
     align-items: center;
-  }
-  .silver .pxc-avatar img {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: -80px;
-    right: 20px;
-  }
-  .bronze .pxc-avatar {
-    height: 150px;
-  }
-  .bronze .pxc-avatar img {
-    top: -105px;
-    left: -10px;
-    height: 80px;
-    width: 80px;
   }
 }
 .pxc-avatar img {
@@ -140,27 +76,6 @@
   background-position: right;
   background-color: #2b2b95;
 }
-.silver .pxc-bg {
-  height: 100%;
-  background-size: contain;
-}
-@media screen and (max-width: 700px) {
-  .silver .pxc-bg {
-    height: 60%;
-    top: 30px;
-  }
-}
-.bronze .pxc-bg {
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 480px;
-  height: 100%;
-  max-height: 80px;
-  border-radius: 0;
-  background-position: 0 -10px;
-}
 @media screen and (max-width: 900px) {
   .pxc-bg {
     left: 50px;
@@ -173,9 +88,6 @@
     height: 200px;
     width: 100%;
     border-radius: 0;
-  }
-  .silver .pxc-bg {
-    background-position: top right;
   }
 }
 
@@ -192,29 +104,6 @@
   flex-direction: column;
   box-shadow: 0 1px 1rem rgba(10, 10, 25, 0.3);
 }
-@media screen and (min-width: 700px) {
-  .silver .pxc-subcard {
-    margin: 0 0 0 -75px;
-    padding: 15px 25px 15px 90px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .silver .pxc-subcard {
-    padding: 15px;
-    margin: 5px;
-    flex: 0 1 auto;
-  }
-}
-.bronze .pxc-subcard {
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  padding: 15px 10px 10px 70px;
-  width: 400px;
-  height: auto;
-  max-height: 80px;
-  border-radius: 0;
-}
 @media screen and (max-width: 900px) {
   .pxc-subcard {
     margin-right: 120px;
@@ -229,9 +118,6 @@
     height: auto;
     flex: 1 0 auto;
   }
-  .silver .pxc-subcard {
-    padding-top: 20px;
-  }
 }
 
 .pxc-stopper {
@@ -243,9 +129,6 @@
   position: absolute;
   z-index: 0;
   left: 75px;
-}
-.bronze .pxc-stopper {
-  display: none;
 }
 @media screen and (max-width: 900px) {
   .pxc-stopper {
@@ -261,11 +144,6 @@
     background: white;
     border-radius: 0;
   }
-  .silver .pxc-stopper {
-    height: 50%;
-    bottom: 0;
-    top: initial;
-  }
 }
 
 .pxc-tags {
@@ -275,9 +153,6 @@
   height: 32px;
   overflow: hidden;
   text-align: right;
-}
-.silver .pxc-tags, .bronze .pxc-tags {
-  display: none;
 }
 .pxc-tags div {
   color: white;
@@ -317,9 +192,6 @@
   overflow: hidden;
   flex: 0 0 auto;
 }
-.bronze .pxc-title {
-  font-size: 18px;
-}
 @media screen and (max-width: 700px) {
   .pxc-title {
     font-size: 16px;
@@ -337,9 +209,6 @@
   -webkit-mask-image: linear-gradient(black 80%, transparent 100%);
   color: #a6aad1;
 }
-.silver .pxc-sub {
-  overflow: visible;
-}
 @media screen and (max-width: 700px) {
   .pxc-sub {
     font-size: 13px;
@@ -355,9 +224,6 @@
   line-height: 1.3;
   overflow: hidden;
   -webkit-mask-image: linear-gradient(black 50%, transparent 100%);
-}
-.silver .pxc-feats, .bronze .pxc-feats {
-  display: none;
 }
 @media screen and (max-width: 700px) {
   .pxc-feats {
@@ -389,9 +255,6 @@
   align-items: center;
   justify-content: space-between;
 }
-.bronze .bottom-row .pxc-info {
-  display: none;
-}
 @media screen and (max-width: 700px) {
   .bottom-row .pxc-info {
     position: absolute;
@@ -421,9 +284,6 @@
   display: inline-block;
   margin: 0 10px;
   cursor: pointer;
-}
-.bronze .bottom-row .links a {
-  display: none;
 }
 .bottom-row .links a:hover {
   color: #EEF;
@@ -455,11 +315,3 @@
   margin-left: 8px;
 }
 
-.bronze .discordLink {
-  display: flex !important;
-  position: absolute;
-  left: -5px;
-  bottom: 5px;
-  justify-content: space-around;
-  align-items: center;
-}

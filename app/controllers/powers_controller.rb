@@ -7,6 +7,7 @@ class PowersController < ApplicationController
 
   def create
     @power = Power.new(power_params)
+    @power.name = @power.name.split.map(&:capitalize).join(' ')
     @power.character = @character
     if @power.save
       redirect_to character_path(@power.character.id)

@@ -1,0 +1,6 @@
+<div class="card-container d-flex align-items-center">
+  <%= simple_form_for [@character, @power], defaults: { label_html: { class: 'white-label' } } do |f| %>
+    <%= f.input :name %>
+    <%= f.submit "Add ability" %>
+  <% end %>
+</div>
